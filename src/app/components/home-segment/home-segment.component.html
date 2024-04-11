@@ -1,9 +1,13 @@
 <div 
-  class="body bg-teal-500 px-4 flex flex-col justify-center items-center space-y-4" 
-  style="height: 830px">
-  <p class="text-white text-center text-sm">
+  class="body bg-lightBlue px-4 flex flex-col justify-center items-center space-y-4 h-760 lg:h-1210 xl:h-930">
+  <img src="../../../assets/memoji1.webp" style="height: 120px;"/>
+  <p class="text-white text-center text-sm lg:text-base">
     My name is Davi,
    I am passionate about beautiful and cutting-edge interfaces and intuitively implemented UX
   </p>
-  <button class="text-sm font-medium text-zinc-900 bg-white py-2 px-3" style="width: fit-content;">Contact Me</button>
+  <div style="width: 130px;" class="flex justify-center space-x-2 rounded-lg text-sm font-medium  text-zinc-900 bg-white py-2 px-3 cursor-pointer" (click)="onGetInTouchClick()" >
+    <span>Contact Me </span>
+    <fa-icon  [icon]="['fas', 'arrow-right']"></fa-icon>
+  </div>
+  
 </div>

@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { HeaderComponent } from './header.component';
+import { FooterComponent } from './footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   imports: [CommonModule, FontAwesomeModule],
-  declarations: [HeaderComponent],
-  exports: [HeaderComponent],
+  declarations: [FooterComponent],
+  exports: [FooterComponent],
 })
-export class HeaderModule {}
+export class FooterModule {}

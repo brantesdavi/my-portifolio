@@ -1,21 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
 })
-export class HeaderComponent {
-  dropdown: boolean = false
+export class FooterComponent {
 
-  toggleDropdown(){
-    this.dropdown = !this.dropdown
-  }
-  
   onGetInTouchClick(id: string) {
     const segment = document.getElementById(id);
     if (segment) {
       segment.scrollIntoView({ behavior: 'smooth' });
     }
   }
-
 }

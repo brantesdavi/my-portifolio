@@ -1,0 +1,9 @@
+<div class=" py-12 flex justify-center w-full">
+  <div class="space-y-8 container px-6 md:px-10 xl:px-0 lg:mx-auto flex flex-col">
+    <h1 class="text-3xl lg:text-4xl font-medium text-zinc-900 text-center">Principais projetos</h1>
+
+    <div class="flex justify-center" *ngFor="let project of projects">
+      <app-project class="mb-16" [project]="project"></app-project>
+    </div>
+  </div>
+</div>

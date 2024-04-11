@@ -1,0 +1,33 @@
+<div class="text-zinc-500 space-y-3 lg:flex lg:space-x-14">
+  <div class=" space-y-3 w-full" >
+    <h2 class=" text-2xl lg:text-3xl">{{project.title}}</h2>
+    <p class="text-sm lg:text-base">
+      {{project.description}}
+    </p>
+
+    <div style="background-color: #EEEEEE;" 
+      class="text-sm lg:text-base py-2 px-4 border-l-2 border-lightBlue text-lightBlue font-bold" *ngFor="let skill of project.skills">{{skill}}
+    </div>
+
+    <div class="border border-lightBlue flex justify-center w-full py-2 space-x-2 rounded-lg" *ngIf="project.repo">
+      <fa-icon class="text-sm lg:text-base text-lightBlue" [icon]="['fab', 'github']"></fa-icon>
+      <a [href]="project.repo" class="text-sm lg:text-base text-lightBlue">Visit Repository</a>
+    </div>
+
+    <div class="border border-lightBlue flex justify-center w-full py-2 space-x-2 rounded-lg" *ngIf="project.design">
+      <fa-icon class="text-sm lg:text-base text-lightBlue" [icon]="['fas', 'object-ungroup']"></fa-icon>
+      <a [href]="project.design" class="text-sm lg:text-base text-lightBlue">Visit Design</a>
+    </div>  
+
+    <div class="border border-lightBlue flex justify-center w-full py-2 space-x-2 rounded-lg" *ngIf="project.live">
+      <fa-icon class="text-sm lg:text-base text-lightBlue" [icon]="['fas', 'globe']"></fa-icon>
+      <a [href]="project.live" class="text-sm lg:text-base text-lightBlue">Visit Live Site</a>
+    </div>
+  </div>
+  
+  <div class="lg:w-700">
+    <img class="w-full" 
+      alt="Capa da aplicação Medisync"        
+      [src]="'./assets/'+project.cover"/>
+  </div>
+</div>
